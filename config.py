@@ -1,0 +1,5 @@
+import os
+
+CONV_TO_LISTEN = 155
+TOKEN = os.getenv("VK_TOKEN")
+PEER_ADD_NUM = 2000000000
