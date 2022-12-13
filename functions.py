@@ -23,5 +23,6 @@ def newMessageEventHandler(obj):
                 if config.CONV_TO_LISTEN != 0:
                     return None
         if detectSpam(message['text']):
+            vk.api("messages.send", peer_id=config.CONV_TO_ANNOUNCE+config.PEER_ADD_NUM, message="[БОТ]\nУдалил это сообщение:", forward_messages=message['id'])
             vk.api("messages.delete", message_ids=message['id'], spam=1, delete_for_all=1)
-            vk.api("messages.removeChatUser", chat_id=message['chat_id'], user_id=message['from_id'])
+            vk.api("messages.removeChatUser", chat_id=message['peer_id']-config.PEER_ADD_NUM, user_id=message['from_id'])
