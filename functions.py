@@ -61,6 +61,9 @@ def newMessageEventHandler(obj):
             if message['peer_id'] != config.PEER_ADD_NUM+config.CONV_TO_LISTEN:
                 if config.CONV_TO_LISTEN != 0:
                     return None
+
+        if message['text'] == "":
+            return None
         result = detectSpam(message['text'])
         if result == spam_level.KICK:
             if '-test' in sys.argv:
