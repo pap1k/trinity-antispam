@@ -1,5 +1,5 @@
 kick_url = [
-    't.me', 'bit.ly', 'vk-cc.ru', 'tg.run', 'mobz.cc', 'clck.ru', 'th.link'
+    't.me', 'bit.ly', 'vk-cc.ru', 'tg.run', 'mobz.cc', 'clck.ru', 'th.link', 'u.to', 'teleg.run'
 ]
 
 announce_urls = [
