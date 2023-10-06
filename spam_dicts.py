@@ -1,9 +1,9 @@
 kick_url = [
-    't.me', 'bit.ly', 'vk-cc.ru', 'tg.run', 'mobz.cc', 'clck.ru', 'th.link', 'u.to', 'teleg.run'
+    't.me', 'bit.ly', 'vk-cc.ru', 'tg.run', 'mobz.cc', 'clck.ru', 'th.link', 'u.to', 'teleg.run', 'vk.cc'
 ]
 
 announce_urls = [
-    'vk.cc', 'bit.ly', 'tinyurl.com'
+    'bit.ly', 'tinyurl.com'
 ]
 
 announce_words = [
